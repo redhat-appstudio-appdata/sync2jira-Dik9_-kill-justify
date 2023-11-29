@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: sync2jira
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/ralphjbean-private-tenant/sync2jira/sync2jira@sha256:57f1b43c177b2f3d640bfca27914474104a7c347b3bd3e8ef3f8e566892442e6
+        name: container-image
+        resources: {}
+status: {}
